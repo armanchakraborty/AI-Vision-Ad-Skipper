@@ -1,6 +1,6 @@
 # AI Vision Ad-Skipper 🤖👁️
 
-**Built for the MLH Hacktoberfest Hack Day Noida (Delhi NCR) x NIAT-NIU**  
+**Built for skipping youtube ads while music streaming and u are not willing to grab your pc**  
 **Category:** Best Open-Source AI Project
 
 ## 📌 Overview
