@@ -3,6 +3,13 @@ import numpy as np
 import pyautogui
 import time
 import random
+import ctypes
+
+# Fix 1: Windows DPI Awareness fix to prevent mouse click coordinate offset on scaled displays (125%, 150%, etc.)
+try:
+    ctypes.windll.shcore.SetProcessDpiAwareness(2)
+except Exception:
+    pass
 
 print("AI Ad-Skipper Agent initialized and scanning screen...")
 print("Press Ctrl+C in terminal to stop.")
@@ -35,6 +42,7 @@ try:
                 scaled_w = int(t_w * scale)
                 scaled_h = int(t_h * scale)
 
+                # Fix 2: Bounds checking fix on width and height limits against screen dimensions
                 if scaled_w <= 0 or scaled_h <= 0 or scaled_w > gray_frame.shape[1] or scaled_h > gray_frame.shape[0]:
                     continue
 
@@ -50,7 +58,7 @@ try:
                     click_x = pt[0] + (scaled_w // 2)
                     click_y = pt[1] + (scaled_h // 2)
 
-                    print(f"\n[{time.strftime('%H:%M:%S')}] Skip Button Detected (Scale {scale:.1f}x) at X:{click_x}, Y:{click_y}! Moving mouse naturally...")
+                    print(f"\n[{time.strftime('%H:%M:%S')}] Skip Button Detected (Scale {scale:.1f}x) at X:{click_x} Y:{click_y}")
 
                     # Humanized mouse movement sequence (prevents bot detection)
                     pyautogui.moveTo(click_x, click_y, duration=random.uniform(0.3, 0.5), tween=pyautogui.easeOutQuad)
