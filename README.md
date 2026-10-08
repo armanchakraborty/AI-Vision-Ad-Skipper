@@ -5,7 +5,7 @@
 ## 📌 Overview
 AI Vision Ad-Skipper is a system-wide AI computer vision agent powered by open-source vision tools (YOLOv8 & OpenCV) and PyAutoGUI. 
 
-Instead of relying on static browser extensions or rigid web DOM selectors that video platforms frequently block or break, our agent visually scans desktop media streams in real-time. It dynamically detects interactive UI ad-skip elements across different display scales and executes humanized mouse interactions to keep focus and workflow uninterrupted.
+Instead of relying on static browser extensions or rigid web DOM selectors that video platforms frequently block or break, also AdBlockers are not ethical as platforms earn from ads, our agent visually scans desktop media streams in real-time. It dynamically detects interactive UI ad-skip elements across different display scales and executes humanized mouse interactions to keep focus and workflow uninterrupted.
 ## 🎯 Advantage
 * By continuously scanning desktop media streams in real-time, this agent dynamically detects interactive UI ad-skip elements across different display scales and executes humanized mouse interactions. It drastically reduces the friction of skippable ads, seamlessly bypassing interruptions when you are away from your keyboard or simply don't want to grab your phone. The system maintains complete focus and uninterrupted workflow without requiring manual intervention.
 ## ✨ Key Features
